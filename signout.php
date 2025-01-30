@@ -7,5 +7,5 @@ if (isset($_SESSION['email'])) {
 
 session_destroy();
 
-header("location:products2.php");
+header("Location: products2.php");
 ?>

@@ -7,7 +7,6 @@ if (isset($_GET["id"])) {
     $result = mysqli_query($con, $sql);
     if ($result) {
         echo ('your item has been deleted');
-        // header('locat');
         header('Location: cart.php');
 
     } else {

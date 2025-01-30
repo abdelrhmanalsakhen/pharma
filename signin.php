@@ -11,7 +11,7 @@ if (isset($_POST['login'])) {
     $row = mysqli_fetch_assoc($userDetails);
     if ($row) {
         $_SESSION['email'] = $email;
-        header("location:Allergies.php");
+        header("Location: Allergies.php");
     } else {
         echo "Invalid email or password";
     }
