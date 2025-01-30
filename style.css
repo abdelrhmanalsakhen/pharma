@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Lato;
+    font-size: 20px;
+    background-color: white;
+}
+
+main {
+    position: relative;
+    padding-bottom: 60px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.cart img,
+.allergies img,
+.bath img,
+.derma img,
+.baby img,
+.oral img,
+.vitamins img,
+.orders img,
+.favorites img,
+.home img,
+.profile img,
+.general img,
+.arrow img {
+    width: 50px;
+    height: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #C4D9FF;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #C4D9FF;
+    border-radius: 10px;
+    margin-top: auto;
+    /* to keep footer at the bottom */
+}
+
+footer>div {
+    flex: 1 1 calc(33.33%);
+    max-width: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+}
+
+.categories>div {
+    flex: 1 1 calc(33.33%);
+    max-width: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.bundles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.bundles>div {
+    flex: 1 1 calc(33.33%);
+    max-width: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.orders {
+    display: flex;
+    height: 10px;
+}
+
+.throat img,
+.cough img,
+.nose img,
+.fever img,
+.pain img,
+.immunity img {
+    width: 200px;
+    border-radius: 10%;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.search input {
+    width: 40%;
+    max-width: 550px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8F80E6;
+}
+
+.cat_name,
+.bundles_name {
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+/* Align form fields vertically and center the form on the page */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.reg-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    /*the form */
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 80%;
+    max-width: 400px;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+select {
+    cursor: pointer;
+}
+
+input[type="submit"],
+button[type="submit"] {
+    width: 80%;
+    max-width: 400px;
+    height: 50px;
+    background-color: #A294F9;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #8F80E6;
+}
+
+.reg-link {
+    color: #8F80E6;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.reg-link:hover {
+    color: #6e60cc;
+}
+
+.userID {
+    display: flex;
+    flex-direction: column;
+    /* vertically */
+    align-items: center;
+    /* Center horizontally */
+    margin-bottom: 20px;
+}
+
+.coupon_field,
+.total_field select {
+    width: 40%;
+    max-width: 550px;
+    height: 35px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.coupon_button {
+    width: 40%;
+    max-width: 550px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #A294F9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.profile2,
+.allergies_icon,
+.cart_icon {
+    display: flex;
+    justify-content: center;
+}
+
+.profile2 img,
+.favorites_icon img,
+.allergies_icon img,
+.cart_icon img {
+    width: 130px;
+    height: 150px;
+    padding-top: 20px;
+}
+
+.username,
+.userID,
+.allergies_text {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2px;
+}
+
+.cart_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cart_detials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart_text,
+.items_number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coupon_text {
+    display: flex;
+    padding-left: 20px;
+}
+
+.application_coupon,
+.total_field {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.coupon_button {
+    width: 20%;
+    height: 36px;
+    font-size: 18px;
+    background-color: #A294F9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.functional_buttons {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.favorites_icon img {
+    width: 130px;
+    height: 150px;
+    padding-top: 20px;
+}
+
+
+.favorites_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 769px) {
+    .favorites_details {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .favorites_icon img {
+        width: 50px;
+        height: 70px;
+    }
+
+    .favorites_text h2 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .row1 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .cat_name {
+        max-width: 50%;
+    }
+
+    .bundles_name {
+        max-width: 50%;
+        justify-content: center;
+    }
+}
